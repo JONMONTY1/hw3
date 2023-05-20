@@ -2,11 +2,9 @@
 
 <ul>
   <% for post in @posts %>
-    <li>
-      <%= post["title"] %>
-      <%= post["posted_on"] %>
-      <%= post["description"] %>
-    </li>
+      <h2><%= post["title"] %></h2>
+      <p><%= post["posted_on"] %></p>
+      <p><%= post["description"] %></p>
   <% end %>
 </ul>
 
