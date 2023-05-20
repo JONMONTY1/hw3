@@ -1,9 +1,8 @@
 <h1>Places I've Been</h1>
 <ul>
-  <p>Mexico City</p>
-  <p>Charleston</p>
-  <p>Beijing</p>
-  <p>Amsterdam</p>
-
-  <p>New Place</p>
+  <% for Place in @places %>
+    <li>
+      <%= Place["name"]%>
+    </li>
+  <% end %>
 </ul>
